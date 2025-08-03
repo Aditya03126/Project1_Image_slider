@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Modern and responsive image slider with interactive controls">
+  <title>Modern Image Slider | Unified Mentor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Image Slider</h1>
+    <p class="description">A modern, responsive image carousel with touch support, autoplay functionality, and image zoom capabilities. Click on images to zoom in/out or use the controls to zoom and view images in fullscreen mode.</p>
+    <div class="upload-container">
+      <label for="imageInput" class="upload-label">Upload Your Own Images</label>
+      <input type="file" id="imageInput" multiple accept="image/*" />
+      <p class="upload-hint">Select multiple images to create your custom slideshow</p>
+    </div>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <!-- Images will be inserted here by JavaScript -->
+      </div>
+      <button class="nav prev" id="prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+      <button class="nav next" id="next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+      <div class="dots" id="dots">
+        <!-- Indicator dots will be inserted here by JavaScript -->
+      </div>
+      <button class="autoplay-toggle" id="autoplayToggle" aria-label="Toggle Autoplay"><i class="fas fa-pause"></i></button>
+      <div class="slider-info">
+        <span id="current-slide">1</span>/<span id="total-slides">5</span>
+      </div>
+      <div class="zoom-controls">
+        <button id="zoom-in" class="zoom-btn" aria-label="Zoom In"><i class="fas fa-search-plus"></i></button>
+        <button id="zoom-out" class="zoom-btn" aria-label="Zoom Out"><i class="fas fa-search-minus"></i></button>
+        <button id="fullscreen" class="zoom-btn" aria-label="View Fullscreen"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
